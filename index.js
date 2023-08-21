@@ -89,9 +89,18 @@ Aşağıdaki macSonucu() fonksiyonununda aşağıdakileri yapınız:
 }
 */
 
-function macSonucu(/*Kodunuzu buraya yazınız*/) {
-  /*Kodunuzu buraya yazınız*/
+function macSonucu(takimSkoru, totalper) {
+  let EvSahibi = 0;
+  let KonukTakim = 0;
+
+  for (let i = 0; i < totalper; i++) {
+    EvSahibi += takimSkoru();
+    KonukTakim += takimSkoru();
+  }
+
+  return { EvSahibi: EvSahibi, KonukTakim: KonukTakim };
 }
+console.log("sonuç", macSonucu(takimSkoru, 4));
 
 /* Zorlayıcı Görev 4: periyotSkoru()
 Aşağıdaki periyotSkoru() fonksiyonununda aşağıdakileri yapınız:
