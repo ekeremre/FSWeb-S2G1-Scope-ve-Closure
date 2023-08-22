@@ -115,8 +115,13 @@ Aşağıdaki periyotSkoru() fonksiyonununda aşağıdakileri yapınız:
 }
   */
 
-function periyotSkoru(/*Kodunuzu buraya yazınız*/) {
+function periyotSkoru(takimSkoru) {
   /*Kodunuzu buraya yazınız*/
+  let EvSahibi = 0;
+  let KonukTakim = 0;
+  EvSahibi += takimSkoru();
+  KonukTakim += takimSkoru();
+  return { EvSahibi: EvSahibi, KonukTakim: KonukTakim };
 }
 
 /* Zorlayıcı Görev 5: skorTabelasi() 
